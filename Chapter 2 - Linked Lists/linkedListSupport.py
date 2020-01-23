@@ -21,6 +21,9 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
+    def set_head(self, node):
+        self.head = node
+
     def add_to_head(self, value):
         temp_node = Node(value)
         temp_node.set_next(self.head)
